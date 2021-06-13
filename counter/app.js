@@ -1,5 +1,5 @@
 //initial value
-let count = 0;
+var count = 10;
 //select value and buttons
 var value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
@@ -17,6 +17,13 @@ btns.forEach(function (btn) {
       count++;
     }
 
+
+    value.textContent = count;
+  });
+});
+
+
+console.log(count);
     //change color
     if (count > 0) {
       value.style.color = "green";
@@ -25,6 +32,3 @@ btns.forEach(function (btn) {
     } else {
       value.style.color = "red";
     }
-    value.textContent = count;
-  });
-});
